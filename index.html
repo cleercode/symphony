@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Grapevine | Hear it here.</title>
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="lastfm.api.js"></script>
+	<script type="text/javascript" src="lastfm.api.md5.js"></script>
+	<script type="text/javascript" src="lastfm.api.cache.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div id="input-area">
+		<h2>Who's your favorite music artist?</h2>
+		<form id="input-form" action="javascript:">
+			<input type="text" name="" id="input-text" value="The Beatles" />
+		</form>
+		<h1>Grapevine</h1>
+	</div>
+	<ul id="artists"></ul>
+	<div id="detail">
+		<h1 id="detail-name" class="clearfix"></h1>
+			
+			<ul id="detail-nav">
+				<li><a href="" id="detail-nav-info">Info</a></li>
+				<li><a href="" id="detail-nav-videos">Videos</a></li>
+			</ul>
+			
+			<div id="detail-main">
+				<div id="detail-info">
+					<ul id="detail-links" class="clearfix">
+						<li><a href="" id="detail-links-lastfm" target="_blank">last.fm</a></li>
+						<li><a href="" id="detail-links-wikipedia" target="_blank">Wikipedia</a></li>
+						<li><a href="" id="detail-links-flickr" target="_blank">flickr</a></li>
+						<li><a href="" id="detail-links-youtube" target="_blank">YouTube</a></li>
+					</ul>
+					<p id="detail-descrip"></p>
+				</div>
+				<img src="" alt="" id="detail-photo"  class="clearfix"/>
+			</div>
+			
+			
+			<div id="detail-videos">
+				<ul id="detail-youtube"></ul>
+			</div>
+			
+			
+
+		
+	</div>
+	<div id="loading">
+		<img src="loading.gif" alt="" />
+		<h2>Loading</h2>
+	</div>
+</body>
+</html>

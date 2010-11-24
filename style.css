@@ -1,0 +1,200 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+em, img,
+ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+	color: #fff;
+	background: #000;
+	font: 14px 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+  color: #d79fa6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+:focus {
+	outline: 0;
+}
+
+li {
+  list-style: none;
+}
+
+#artists {
+  display: none;
+  padding-top: 53px;
+}
+
+#artists li {
+  opacity: 0.3;
+  float: left;
+  margin: 0;
+  width: 126px;
+  height: 126px;
+  position: relative;
+}
+
+#artists li .name {
+  background: rgba(0, 0, 0, 0.8000);
+  padding: 3px;
+  position: absolute;
+  bottom: 0;
+}
+
+#input-area {
+  border-bottom: 1px solid #471218;
+  padding: 10px;
+  overflow: auto;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  background-color: #ba2c46;
+  background-image: -moz-linear-gradient(top, #ba2c46, #831f31); /* FF3.6 */
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ba2c46),color-stop(1, #831f31)); /* Saf4+, Chrome */
+            filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#ba2c46', EndColorStr='#831f31'); /* IE6,IE7 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ba2c46', EndColorStr='#831f31')"; /* IE8 */
+  -moz-box-shadow: 0px 4px 10px #000; /* FF3.5+ */
+  -webkit-box-shadow: 0px 4px 10px #000; /* Saf3.0+, Chrome */
+  box-shadow: 0px 4px 10px #000; /* Opera 10.5, IE 9.0 */
+}
+
+#input-area h2 {
+  font-size: 24px;
+  font-weight: 100;
+  float: left;
+  margin: 2px 20px 0 0;
+}
+
+#input-area h1 {
+  font-size: 24px;
+  float: right;
+  margin-right: 40px;
+  text-transform: lowercase;
+  font-weight: 100;
+  font-style: italic;
+}
+
+#input-text {
+  font-size: 16px;
+  text-shadow: #000 0px 1px 3px;
+  float: left;
+  padding: 5px;
+  border: 0;
+  border-bottom: 1px solid #b07f82;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: #3a0e16;
+  color: #d79fa6;
+}
+
+#detail {
+  display: none;
+  position: fixed;
+  left: 50%;
+  margin-left: -250px;
+  top: 53px;
+  background: #000;
+  width: 500px;
+  padding: 30px;
+}
+
+#detail-name {
+  font-size: 42px;
+  font-weight: 100;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#detail-info {
+  float: left;
+  width: 230px;
+}
+
+#detail-descrip {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: justify;
+}
+
+#detail-photo {
+  float: right;
+  width: 252px;
+  margin-left: 10px;
+}
+
+#detail-links {
+  margin: 5px auto 20px;
+}
+
+#detail-links li {
+  float: left;
+  margin-right: 5px;
+}
+
+#detail-links a {
+  background: #ba2c46;
+  border-bottom: 1px solid #471218;
+  padding: 3px;
+  font-weight: 300;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+#detail-videos {
+  display: none;
+}
+
+#loading {
+  position: fixed;
+  background: #000;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+}
+
+#loading h2 {
+  font-size: 72px;
+  font-weight: 100;
+}
+
+/* Clearfix */
+
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
