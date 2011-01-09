@@ -27,10 +27,6 @@ a {
   font-weight: 500;
 }
 
-:focus {
-	outline: 0;
-}
-
 li {
   list-style: none;
 }
